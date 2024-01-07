@@ -22,9 +22,17 @@ body {
 
 #nav {
 	display: flex;
-	gap: 1rem;
 }
 
 #body {
 	margin: 5rem;
+}
+
+#fire {
+	width: 200px;
+	height: auto;
+}
+
+#nav button {
+	cursor: pointer;
 }
