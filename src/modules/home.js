@@ -44,4 +44,14 @@ hoursEl.appendChild(hourListEl);
 
 mainDiv.appendChild(hoursEl);
 
+const imgContainer = document.createElement("div");
+const imgEl = document.createElement("img");
+imgEl.setAttribute("id", "fire");
+imgEl.setAttribute("alt", `Fire saying "This is fine."`);
+imgEl.setAttribute("src", "../src/img/fire.png");
+
+imgContainer.appendChild(imgEl);
+
+mainDiv.appendChild(imgContainer);
+
 export default mainDiv;
