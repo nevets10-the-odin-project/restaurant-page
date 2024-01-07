@@ -1,1 +1,1 @@
-console.log("Hello there.");
+(()=>{"use strict";const e=document.createElement("div"),t=document.createElement("h1");t.textContent="Heck's Kitchen",e.appendChild(t);const n=e;console.log(n),document.getElementById("content").appendChild(n)})();
