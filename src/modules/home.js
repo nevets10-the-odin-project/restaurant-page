@@ -1,29 +1,29 @@
-const mainDiv = document.createElement("div");
+const mainEl = document.createElement("div");
 
 const titleEl = document.createElement("h1");
 titleEl.textContent = "Heck's Kitchen";
-mainDiv.appendChild(titleEl);
+mainEl.appendChild(titleEl);
 
-const aboutEl = document.createElement("div");
+const aboutContainer = document.createElement("div");
 
-const titleEl1 = document.createElement("h2");
-titleEl1.textContent = "About Us";
-aboutEl.appendChild(titleEl1);
+const aboutTitle = document.createElement("h2");
+aboutTitle.textContent = "About Us";
+aboutContainer.appendChild(aboutTitle);
 
-const textEl1 = document.createElement("p");
-textEl1.textContent =
+const aboutText = document.createElement("p");
+aboutText.textContent =
 	"Bacon ipsum dolor amet chuck pastrami rump, ham hock meatloaf tongue ball tip pig. Frankfurter salami kielbasa prosciutto drumstick jerky jowl alcatra. Beef ribs alcatra tail fatback cupim, rump burgdoggen strip steak ham. Pork chop flank brisket shoulder bacon cow chislic swine buffalo jowl tri-tip short ribs hamburger doner spare ribs. Chislic salami flank fatback. Tri-tip capicola tenderloin pork chop shank beef ribs pancetta pastrami jerky.";
-aboutEl.appendChild(textEl1);
+aboutContainer.appendChild(aboutText);
 
-mainDiv.appendChild(aboutEl);
+mainEl.appendChild(aboutContainer);
 
-const hoursEl = document.createElement("div");
-const titleEl2 = document.createElement("h2");
-titleEl2.textContent = "Hours";
-hoursEl.appendChild(titleEl2);
+const hoursContainer = document.createElement("div");
+const hoursTitle = document.createElement("h2");
+hoursTitle.textContent = "Hours";
+hoursContainer.appendChild(hoursTitle);
 
-const hourListEl = document.createElement("ul");
-const hourArray = [
+const HoursList = document.createElement("ul");
+const hoursArray = [
 	"Sunday: 8:00am - 8:00pm",
 	"Monday: 8:00am - 8:00pm",
 	"Tuesday: 8:00am - 8:00pm",
@@ -33,25 +33,25 @@ const hourArray = [
 	"Saturday: 8:00am - 10:00pm",
 ];
 
-hourArray.forEach((hour) => {
+hoursArray.forEach((hour) => {
 	const liEl = document.createElement("li");
 	liEl.textContent = hour;
 
-	hourListEl.appendChild(liEl);
+	HoursList.appendChild(liEl);
 });
 
-hoursEl.appendChild(hourListEl);
+hoursContainer.appendChild(HoursList);
 
-mainDiv.appendChild(hoursEl);
+mainEl.appendChild(hoursContainer);
 
 const imgContainer = document.createElement("div");
-const imgEl = document.createElement("img");
-imgEl.setAttribute("id", "fire");
-imgEl.setAttribute("alt", `Fire saying "This is fine."`);
-imgEl.setAttribute("src", "../src/img/fire.png");
+const image = document.createElement("img");
+image.setAttribute("id", "fire");
+image.setAttribute("alt", `Fire saying "This is fine."`);
+image.setAttribute("src", "../src/img/fire.png");
 
-imgContainer.appendChild(imgEl);
+imgContainer.appendChild(image);
 
-mainDiv.appendChild(imgContainer);
+mainEl.appendChild(imgContainer);
 
-export default mainDiv;
+export default mainEl;
