@@ -9,4 +9,9 @@ const contentEl = document.getElementById("content");
 contentEl.appendChild(tabs[currentIndex]);
 
 const buttons = document.querySelectorAll(".nav-btn");
-console.log(buttons);
+
+buttons.forEach((button, index) => {
+	if (index === currentIndex) {
+		button.setAttribute("disabled", "");
+	}
+});

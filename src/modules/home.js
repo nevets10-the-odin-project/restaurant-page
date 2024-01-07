@@ -6,7 +6,7 @@ const titleEl = document.createElement("h1");
 titleEl.textContent = "Heck's Kitchen";
 mainEl.appendChild(titleEl);
 
-mainEl.appendChild(nav);
+mainEl.appendChild(nav());
 
 const aboutContainer = document.createElement("div");
 
