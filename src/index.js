@@ -13,8 +13,6 @@ contentBodyEl.setAttribute("id", "content-body");
 
 contentEl.appendChild(contentBodyEl);
 
-switchTab(0);
-
 const buttons = document.querySelectorAll(".nav-btn");
 
 buttons.forEach((button, index) => {
@@ -24,6 +22,16 @@ buttons.forEach((button, index) => {
 	});
 });
 
-function switchTab(index) {
-	contentBodyEl.replaceChildren(tabs[index]);
+switchTab(0);
+
+function switchTab(newIndex) {
+	buttons.forEach((button, index) => {
+		if (index === newIndex) {
+			button.setAttribute("disabled", true);
+		} else {
+			button.removeAttribute("disabled");
+		}
+	});
+
+	contentBodyEl.replaceChildren(tabs[newIndex]);
 }
