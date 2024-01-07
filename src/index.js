@@ -2,5 +2,11 @@ import home from "./modules/home";
 import menu from "./modules/menu";
 import contact from "./modules/contact";
 
+let currentIndex = 0;
+const tabs = [home, menu, contact];
+
 const contentEl = document.getElementById("content");
-contentEl.appendChild(home);
+contentEl.appendChild(tabs[currentIndex]);
+
+const buttons = document.querySelectorAll(".nav-btn");
+console.log(buttons);
