@@ -36,3 +36,13 @@ body {
 #nav button {
 	cursor: pointer;
 }
+
+.menu-item {
+	display: grid;
+	grid-template-columns: 1fr 1.5fr;
+}
+
+.menu-item img {
+	width: auto;
+	height: 250px;
+}

@@ -37,19 +37,20 @@ const foods = [
 
 foods.forEach((food) => {
 	const foodEl = document.createElement("div");
+	foodEl.classList.add("menu-item");
+
+	const leftEl = document.createElement("div");
 
 	const foodNameEl = document.createElement("h2");
-	foodNameEl.textContent = food.name;
-	foodEl.appendChild(foodNameEl);
+	foodNameEl.textContent = `${food.name} - ${food.price}`;
+	leftEl.appendChild(foodNameEl);
 
 	const foodImgEl = document.createElement("img");
 	foodImgEl.setAttribute("src", food.img);
 	foodImgEl.setAttribute("alt", `Image of ${food.name}`);
-	foodEl.appendChild(foodImgEl);
+	leftEl.appendChild(foodImgEl);
 
-	const foodPriceEl = document.createElement("p");
-	foodPriceEl.textContent = `$${food.price}`;
-	foodEl.appendChild(foodPriceEl);
+	foodEl.appendChild(leftEl);
 
 	const foodDescriptionEl = document.createElement("p");
 	foodDescriptionEl.textContent = food.description;
