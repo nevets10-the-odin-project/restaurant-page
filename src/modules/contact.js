@@ -1,4 +1,7 @@
 const mainEl = document.createElement("div");
-mainEl.textContent = "Contact";
+
+const titleEl = document.createElement("h2");
+titleEl.textContent = "Contact Us";
+mainEl.appendChild(titleEl);
 
 export default mainEl;

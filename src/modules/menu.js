@@ -1,6 +1,6 @@
 const mainEl = document.createElement("div");
 
-const titleEl = document.createElement("h1");
+const titleEl = document.createElement("h2");
 titleEl.textContent = "Menu";
 mainEl.appendChild(titleEl);
 
@@ -41,7 +41,7 @@ foods.forEach((food) => {
 
 	const leftEl = document.createElement("div");
 
-	const foodNameEl = document.createElement("h2");
+	const foodNameEl = document.createElement("h3");
 	foodNameEl.textContent = `${food.name} - ${food.price}`;
 	leftEl.appendChild(foodNameEl);
 

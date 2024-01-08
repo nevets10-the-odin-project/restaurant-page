@@ -1,12 +1,12 @@
 const mainEl = document.createElement("div");
 
-const titleEl = document.createElement("h1");
-titleEl.textContent = "Heck's Kitchen";
+const titleEl = document.createElement("h2");
+titleEl.textContent = "Home";
 mainEl.appendChild(titleEl);
 
 const aboutContainer = document.createElement("div");
 
-const aboutTitle = document.createElement("h2");
+const aboutTitle = document.createElement("h3");
 aboutTitle.textContent = "About Us";
 aboutContainer.appendChild(aboutTitle);
 
@@ -18,7 +18,7 @@ aboutContainer.appendChild(aboutText);
 mainEl.appendChild(aboutContainer);
 
 const hoursContainer = document.createElement("div");
-const hoursTitle = document.createElement("h2");
+const hoursTitle = document.createElement("h3");
 hoursTitle.textContent = "Hours";
 hoursContainer.appendChild(hoursTitle);
 

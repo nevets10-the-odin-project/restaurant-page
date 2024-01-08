@@ -6,6 +6,11 @@ import contact from "./modules/contact";
 const tabs = [home, menu, contact];
 
 const contentEl = document.getElementById("content");
+
+const titleEl = document.createElement("h1");
+titleEl.textContent = "Heck's Kitchen";
+
+contentEl.appendChild(titleEl);
 contentEl.appendChild(nav);
 
 const contentBodyEl = document.createElement("div");
