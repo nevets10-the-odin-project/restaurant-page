@@ -1,6 +1,6 @@
 body {
 	background-color: black;
-	background-image: url("../src/img/fine.jpg");
+	background-image: url("./fine.jpg");
 	background-size: cover;
 	font-family: cursive;
 	color: black;
