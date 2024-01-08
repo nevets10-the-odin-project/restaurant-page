@@ -1,3 +1,5 @@
+import fireImg from "../img/fire.png";
+
 const mainEl = document.createElement("div");
 
 const titleEl = document.createElement("h2");
@@ -48,7 +50,7 @@ const imgContainer = document.createElement("div");
 const image = document.createElement("img");
 image.setAttribute("id", "fire");
 image.setAttribute("alt", `Fire saying "This is fine."`);
-image.setAttribute("src", "../src/img/fire.png");
+image.setAttribute("src", fireImg);
 
 imgContainer.appendChild(image);
 

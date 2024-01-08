@@ -1,3 +1,5 @@
+import map from "../img/map.png";
+
 const mainEl = document.createElement("div");
 
 const titleEl = document.createElement("h2");
@@ -24,7 +26,7 @@ paragraphEl.textContent =
 mainEl.appendChild(paragraphEl);
 
 const mapEl = document.createElement("img");
-mapEl.setAttribute("src", "../src/img/map.png");
+mapEl.setAttribute("src", map);
 mapEl.classList.add("map");
 mainEl.appendChild(mapEl);
 
